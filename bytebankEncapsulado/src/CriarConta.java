@@ -3,10 +3,12 @@ public class CriarConta {
 
 	public static void main(String[] args) {
 		Cliente ruan = new Cliente();
-		Conta contaDoRuan = new Conta();
+		Conta contaDoRuan = new Conta(2275, 46);
 		
 		Cliente cinthia = new Cliente();
-		Conta contaDaCinthia = new Conta();
+		Conta contaDaCinthia = new Conta(2221, 46);
+		
+		Conta.getTotalConta();
 		
 		
 		contaDoRuan.setTitular(ruan);
