@@ -9,5 +9,7 @@ public class TestaFuncionario {
 		f1.setSalario(2500.0);
 		
 		System.out.println("Funcionario: "+ f1.getNome() + ", Cpf: " + f1.getCpf() + ", Salario: " + f1.getSalario() + ".");
+		
+		System.out.println(f1.getBonificacao());
 	}
 }
