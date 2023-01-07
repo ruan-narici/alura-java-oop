@@ -17,6 +17,6 @@ public class Diretor extends Funcionario {
 	
 	public double getBonificacao() {
 		System.out.println("Bonificacao do Diretor.");
-		return super.getSalario() + super.getBonificacao() + 200;
+		return super.getSalario() + 200;
 	}
 }
