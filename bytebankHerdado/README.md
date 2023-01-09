@@ -1,2 +1,3 @@
 # Preview details of project
-![](./img/preview.png)
+![Resumo](./img/preview.png)
+![Modelando](./img/preview_2.png)

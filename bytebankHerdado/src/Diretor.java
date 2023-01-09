@@ -1,21 +1,24 @@
 
-public class Diretor extends Funcionario {
-	private int senha;
+public class Diretor extends Funcionario implements Autenticacao {
 	
-	public boolean autenticacao(int senha) {
-		if (this.senha == senha) {
+	private int senha;
+
+	@Override
+	public boolean autentica(int Senha) {
+		if (Senha == this.senha) {
 			return true;
 		}
 		else {
 			return false;
 		}
 	}
-	
-	public void setSenha(int senha) {
-		this.senha = senha;
+
+	@Override
+	public void setSenha(int Senha) {
+		this.senha = Senha;
 	}
-	
-	public double getBonificacao() {
+
+		public double getBonificacao() {
 		System.out.println("Bonificacao do Diretor.");
 		return super.getSalario() + 200;
 	}

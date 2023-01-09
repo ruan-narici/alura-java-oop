@@ -1,6 +1,5 @@
 
 public abstract class Funcionario {
-	
 
 	private String nome;
 	private String cpf;
@@ -26,5 +25,6 @@ public abstract class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
 }
 

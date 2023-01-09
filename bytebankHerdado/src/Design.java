@@ -1,5 +1,5 @@
 
-public class Gerente extends Funcionario implements Autenticacao {
+public class Design extends Funcionario implements Autenticacao {
 	
 	private int senha;
 
@@ -18,10 +18,11 @@ public class Gerente extends Funcionario implements Autenticacao {
 		this.senha = Senha;
 	}
 
-	
+	@Override
 	public double getBonificacao() {
-		System.out.println("Bonificacao do Gerente.");
-		return super.getSalario();
+		System.out.println("Bonificacao do Design.");
+		double bonificacao = super.getSalario() / 2;
+		return bonificacao;
 	}
-	
+
 }

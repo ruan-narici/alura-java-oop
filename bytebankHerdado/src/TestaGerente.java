@@ -10,7 +10,7 @@ public class TestaGerente {
 		g1.setSenha(112233);
 		
 		System.out.println("Funcionario: "+ g1.getNome() + ", Cpf: " + g1.getCpf() + ", Salario: " + g1.getSalario() + ".");
-		System.out.println(g1.autenticacao(112233));
+		System.out.println(g1.autentica(112233));
 		
 		System.out.println(g1.getBonificacao());
 	}
