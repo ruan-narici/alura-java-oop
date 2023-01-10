@@ -1,21 +1,20 @@
 
 public class Cliente implements Autenticacao {
 	
-	private int senha;
-
+	private AutenticacaoUtil autenticador;
+	
+	public Cliente() {
+		this.autenticador = new AutenticacaoUtil();
+	}
+	
 	@Override
 	public boolean autentica(int Senha) {
-		if (Senha == this.senha) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return this.autenticador.autentica(Senha);
 	}
 
 	@Override
 	public void setSenha(int Senha) {
-		this.senha = Senha;
+		this.autenticador.setSenha(Senha);
 	}
 	
 }

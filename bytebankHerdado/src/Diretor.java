@@ -1,21 +1,20 @@
 
 public class Diretor extends Funcionario implements Autenticacao {
 	
-	private int senha;
-
+	private AutenticacaoUtil autenticador;
+	
+	public Diretor() {
+		this.autenticador = new AutenticacaoUtil();
+	}
+	
 	@Override
 	public boolean autentica(int Senha) {
-		if (Senha == this.senha) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return this.autenticador.autentica(Senha);
 	}
 
 	@Override
 	public void setSenha(int Senha) {
-		this.senha = Senha;
+		this.autenticador.setSenha(Senha);
 	}
 
 		public double getBonificacao() {
