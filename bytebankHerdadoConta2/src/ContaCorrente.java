@@ -5,6 +5,10 @@ public class ContaCorrente extends Conta {
 		super(numero, agencia);
 	}
 	
+	public void deposita(double valor) {
+		this.saldo += valor;
+	}
+	
 	@Override
 	public boolean saca(double valor) {
 		double valorSaca = valor + 1;
