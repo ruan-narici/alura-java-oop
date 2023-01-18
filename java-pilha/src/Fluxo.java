@@ -17,9 +17,16 @@ public class Fluxo {
 		System.out.println("Iniciando o metodo 2...");
 		for (int i = 0; i < 5; i++) {
 			System.out.println("Carregando arquivo " + i);
+			Conta c = null;
+			try {
+				int calc = i / 0;
+				c.getSaldo();
+			} catch(ArithmeticException | NullPointerException ex) {
+				String msg = ex.getMessage();
+				System.out.println("Erro: " + msg);
+			}
 		}
 		System.out.println("Finalizando o metodo 2.");
 	}
-	
 	
 }
