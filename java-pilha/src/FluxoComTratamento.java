@@ -5,7 +5,7 @@ public class FluxoComTratamento {
 		System.out.println("Iniciando o fluxo...");
 		try {
 		metodo1();
-		} catch (ArithmeticException ex) {
+		} catch (ArithmeticException | MinhaExcecao ex) {
 			String msg = ex.getMessage();
 			System.out.println("Erro: " + msg);
 			ex.printStackTrace();
@@ -23,7 +23,8 @@ public class FluxoComTratamento {
 		System.out.println("Iniciando o metodo 2...");
 //		ArithmeticException exception = new ArithmeticException("Metodo 2 Error");
 //		throw exception;
-		throw new ArithmeticException("Metodo 2 Error");
+//		throw new ArithmeticException("Metodo 2 Error");
+		throw new MinhaExcecao("MTD 2 Error");
 		
 	}
 	
