@@ -1,7 +1,7 @@
 
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(int numero, int agencia) {
+	public ContaPoupanca(int numero, int agencia) throws AgenciaException {
 		super(numero, agencia);
 	}
 	

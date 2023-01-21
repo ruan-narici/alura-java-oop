@@ -1,7 +1,7 @@
 
 public class TesteContas {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AgenciaException {
 		
 //		Conta c1 = new Conta(200, 1);
 		ContaCorrente cc1 = new ContaCorrente(300, 2);

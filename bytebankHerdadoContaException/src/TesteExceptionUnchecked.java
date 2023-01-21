@@ -1,7 +1,7 @@
 
 public class TesteExceptionUnchecked {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AgenciaException {
 		
 		ContaCorrente cc = new ContaCorrente(123, 440);
 		cc.deposita(100.0);

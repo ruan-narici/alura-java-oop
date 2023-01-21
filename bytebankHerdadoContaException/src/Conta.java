@@ -8,7 +8,10 @@ public abstract class Conta {
 	private static int totalConta;
 
 	
-	public Conta(int numero, int agencia) {
+	public Conta(int numero, int agencia) throws AgenciaException{
+		if (agencia == 0) {
+			throw new AgenciaException("O valor da agencia nao pode ser " + agencia + ".");
+		}
 		Conta.totalConta++;
 		this.numero = numero;
 		this.agencia = agencia;
@@ -41,7 +44,10 @@ public abstract class Conta {
 		return this.numero;
 	}
 	
-	public void setAgencia(int agencia) {
+	public void setAgencia(int agencia) throws AgenciaException{
+		if (agencia == 0) {
+			throw new AgenciaException("O valor da agencia nao pode ser " + agencia + ".");
+		}
 		this.agencia = agencia;
 	}
 	

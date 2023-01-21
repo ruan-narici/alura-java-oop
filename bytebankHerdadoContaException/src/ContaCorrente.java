@@ -1,7 +1,7 @@
 
 public class ContaCorrente extends Conta implements Tributavel {
 
-	public ContaCorrente(int numero, int agencia) {
+	public ContaCorrente(int numero, int agencia) throws AgenciaException {
 		super(numero, agencia);
 	}
 	
