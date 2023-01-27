@@ -73,4 +73,9 @@ public abstract class Conta {
 		System.out.println("Número total de contas criadas: " + Conta.totalConta + ".");
 		return Conta.totalConta;
 	}
+	
+	@Override
+	public String toString() {
+		return "Numero: " + this.numero + ", Agencia: " + this.agencia;
+	}
 }
