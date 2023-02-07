@@ -1,0 +1,4 @@
+HORA: 19:17
+TÍTULO: Algum titulo_1
+
+TEXTO: Algum texto_1
