@@ -36,5 +36,18 @@ public class Curso {
 	public String getInstrutor() {
 		return this.instrutor;
 	}
+	
+	public int getTempoTotal() {
+		int tempo = 0;
+		for (Aula aula : aula) {
+			tempo += aula.getTempo();
+		}
+		return tempo;
+	}
+	
+	@Override
+	public String toString() {
+		return "\nTítulo: " + this.titulo + "\nInstrutor: " + this.instrutor + "\nAula: " + this.aula;
+	}
 
 }
