@@ -1,13 +1,16 @@
 package br.com.alura.java;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 public class Curso {
 	
 	private String titulo;
 	private String instrutor;
+	private Set<Aluno> alunos = new HashSet<>();
 	private List<Aula> aula = new LinkedList<>();
 	
 	public Curso(String titulo, String instrutor) throws Exception {
@@ -43,6 +46,14 @@ public class Curso {
 			tempo += aula.getTempo();
 		}
 		return tempo;
+	}
+	
+	public void matricula(Aluno aluno) {
+		this.alunos.add(aluno);
+	}
+	
+	public Set<Aluno> getAluno() {
+		return Collections.unmodifiableSet(this.alunos);
 	}
 	
 	@Override
