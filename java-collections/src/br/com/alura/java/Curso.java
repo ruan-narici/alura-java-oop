@@ -61,4 +61,12 @@ public class Curso {
 		return "\nTítulo: " + this.titulo + "\nInstrutor: " + this.instrutor + "\nAula: " + this.aula;
 	}
 
+	public boolean estaMatriculado(Aluno outroAluno) {
+		if (this.alunos.contains(outroAluno)) {
+			return true;	
+		} else {
+			return false;
+		}
+	}
+
 }
