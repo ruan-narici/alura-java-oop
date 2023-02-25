@@ -26,6 +26,11 @@ public class TesteDefaultMethods {
 
 		System.out.println();
 		palavras.forEach(palavra -> System.out.println(palavra));
+		
+		System.out.println();
+		System.out.println("Usando method reference: ");
+		palavras.sort(Comparator.comparing(String::length));
+		palavras.forEach(System.out::println);
 
 	}
 }
