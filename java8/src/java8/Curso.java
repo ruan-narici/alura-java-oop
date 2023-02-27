@@ -2,6 +2,7 @@ package java8;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.OptionalDouble;
 
 public class Curso {
 	
@@ -53,6 +54,7 @@ public class Curso {
 			.mapToDouble(c -> c.getAlunos())
 			.average()
 			.ifPresent(c -> System.out.println(c));
+		
 	}	
 	
 }
