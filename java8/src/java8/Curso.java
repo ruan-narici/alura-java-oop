@@ -46,6 +46,13 @@ public class Curso {
 		.mapToInt(Curso::getAlunos)
 		.sum();
 		System.out.println(somaDosAlunos);
-	}
+		
+		System.out.println();
+		System.out.println("Chegou a vez de fazer o calculo da media de alunos de todos os cursos.");
+		cursos.stream()
+			.mapToDouble(c -> c.getAlunos())
+			.average()
+			.ifPresent(c -> System.out.println(c));
+	}	
 	
 }
